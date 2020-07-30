@@ -87,11 +87,31 @@ body {
     width: 100%;
     padding: 0 50px;
     font-size: larger;
+    animation: shadow-animation 0.6s ease-in-out;
+}
+
+@keyframes shadow-animation {
+    from {
+        box-shadow: none;
+    }
+    to {
+        box-shadow: 0px 30px 27px 0px rgba(191, 191, 191, 0.23);
+    }
 }
 
 .search-box {
     margin-bottom: 50px;
     position: relative;
+    animation: margin-animation 0.6s ease-in-out;
+}
+
+@keyframes margin-animation {
+    from {
+        margin-bottom: 0;
+    }
+    to {
+        margin-bottom: 50px;
+    }
 }
 
 .search-icon {
@@ -118,6 +138,16 @@ body {
 .shop {
     width: 35vw;
     margin-right: 150px;
+    animation: shop-animation 0.6s ease-in-out;
+}
+
+@keyframes shop-animation {
+    from {
+        margin-right: 0px;
+    }
+    to {
+        margin-right: 150px;
+    }
 }
 
 
@@ -176,6 +206,9 @@ body {
 
 .image {
     width: 100%;
+    height: 200px;
+    object-fit: contain;
+    transition: all 0.2s ease;
 }
 
 .mt-5 {
@@ -196,10 +229,12 @@ body {
     position: relative;
     width: 100%;
     margin: auto;
+    transition: all 0.2s ease;
 }
 
 .buttons {
-    display: none;
+    opacity: 0;
+    display: flex;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -210,11 +245,12 @@ body {
 
 .hoverable:hover>.buttons {
     display: flex;
+    opacity: 1;
+    transition: all 0.6s ease;
 }
 
-.hoverable:hover>.hovered {
-    width: 70%;
-    margin-bottom: 80px;
+.hoverable:hover>.hovered .image {
+    height: 120px;
 }
 
 .buttons>a {
@@ -227,6 +263,11 @@ body {
 .btn-pink {
     background: #ff3d8b;
     color: white;
+}
+
+.btn:hover,
+.btn-pink:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .text-center {
@@ -269,6 +310,38 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.text-link {
+    position: relative;
+    font-size: large;
+    cursor: pointer;
+}
+
+.text-link:hover::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    background: #ff3d8b;
+    margin-top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: width-animation 0.366s ease-in-out;
+}
+
+@keyframes width-animation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 170px;
+    }
+}
+
+.text-link>img {
+    width: 18px;
 }
 
 .text-pink {
