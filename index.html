@@ -15,12 +15,12 @@
                 <h1 class="logo">Blackbox.lk</h1>
             </div>
             <div class="navbar-right">
-                <span>
+                <span class="hide-tablet">
                     Categories 
                 </span>
-                <img src="assets/arrow-down.png" class="valign-middle" style="margin-left: 15px">
-                <img class="navbar-item" src="assets/icon-cart.png">
-                <a href="#" class="btn navbar-item">Login</a>
+                <img src="assets/arrow-down.png" class="valign-middle hide-tablet" style="margin-left: 15px">
+                <img class="navbar-item hide-tablet" src="assets/icon-cart.png">
+                <a href="#" class="btn navbar-item hide-tablet">Login</a>
                 <a href="#" class="menu-btn navbar-item">
                     <img src="assets/menu.png">
                 </a>
@@ -38,7 +38,7 @@
                     <img src="assets/video-btn.png" class="valign-middle"> <span>Watch Video</span>
                 </div>
             </div>
-            <img class="shop" src="assets/shop.png" />
+            <img class="shop hide-tablet" src="assets/shop.png" />
         </header>
 
         <!-- Categories -->
@@ -151,7 +151,7 @@
         <section class="what-we-promise section">
             <div class="box-section">
                 <h1>What we promise?</h1>
-                <div class="row container">
+                <div class="row is-mobile container">
                     <div class="col tile">
                         <img src="assets/029-invoice.png">
                         <h2 class="mt-5">Black Box Trust</h2>
@@ -196,7 +196,7 @@
                 <h1>Our Brands</h1>
 
                 <div class="container">
-                    <div class="row">
+                    <div class="row is-mobile">
                         <div class="col">
                             <img src="assets/gwiquxufhzwpczlg22ln.png">
                         </div>
@@ -210,7 +210,7 @@
                             <img src="assets/1200px-Adidas_Logo.svg.png">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row is-mobile">
                         <div class="col">
                             <img src="assets/logo-fossil.png">
                         </div>
@@ -231,66 +231,73 @@
         <!-- Footer -->
         <footer class="footer section">
             <div class="container">
-                <div class="row">
+                <div class="row no-margin">
                     <div class="col">
                         <h2>Support</h2>
+                        <hr>
+                        <div class="mt-5">
+                            <a href="#">Payment Methods</a>
+                            <a href="#">Frequently Asked Questions</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
                     </div>
                     <div class="col">
                         <h2>Quick Links</h2>
+                        <hr>
+                        <div class="mt-5">
+                            <a href="#">Browse All Products</a>
+                            <a href="#">Browse Mini Stores</a>
+                            <a href="#">Browse Sellers</a>
+                            <a href="#">Sell on MyStore</a>
+                            <a href="#">Contact Us</a>
+                        </div>
                     </div>
                     <div class="col-2">
                         <h2>Blackbox newsletter</h2>
+                        <hr>
+                        <div class="mt-5">
+                            <input type="email">
+                            <p class="mt-5 text-muted">Register now to get updates on promotions and coupons</p>
+                            <h2 class="mt-5 text-smaller">Get it on</h2>
+                            <div class="row is-mobile mt-4">
+                                <img class="small-btn" src="assets/en_badge_web_generic.png">
+                                <img class="small-btn" src="assets/itunes-app-store-logo.png">
+                            </div>
+                        </div>
                     </div>
                     <div class="col">
                         <h2>Follow us</h2>
+                        <hr>
+                        <div class="mt-5">
+                            <div class="row is-mobile" style="justify-content: space-around; align-items: center;">
+                                <img src="assets/twitter.png">
+                                <img src="assets/fb.png">
+                                <img src="assets/google.png">
+                            </div>
+                            <div class="contact mt-5 text-muted">
+                                <p>contact@blackbox.lk</p>
+                                <p>
+                                    Whatsapp - 947 666 85 333
+                                </p>
+                                <p>
+                                    Viber - 947 666 85 333
+                                </p>
+                                <p>
+                                    Telegram - 947 666 85 333
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <hr>
                 <div class="row mt-5">
-                    <div class="col">
-                        <a href="#">Payment Methods</a>
-                        <a href="#">Frequently Asked Questions</a>
-                        <a href="#">Terms & Conditions</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
-                    <div class="col">
-                        <a href="#">Browse All Products</a>
-                        <a href="#">Browse Mini Stores</a>
-                        <a href="#">Browse Sellers</a>
-                        <a href="#">Sell on MyStore</a>
-                        <a href="#">Contact Us</a>
-                    </div>
-                    <div class="col-2">
-                        <input type="email">
-                        <p class="mt-5 text-muted">Register now to get updates on promotions and coupons</p>
-                        <h2 class="mt-5 text-smaller">Get it on</h2>
-                        <div class="row mt-4">
-                            <img class="small-btn" src="assets/en_badge_web_generic.png">
-                            <img class="small-btn" src="assets/itunes-app-store-logo.png">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row" style="justify-content: space-between;">
-                            <img src="assets/video-btn.png">
-                            <img src="assets/video-btn.png">
-                            <img src="assets/video-btn.png">
-                        </div>
-                        <div class="contact mt-5 text-muted">
-                            <p>contact@blackbox.lk</p>
-                            <p>
-                                Whatsapp - 947 666 85 333
-                            </p>
-                            <p>
-                                Viber - 947 666 85 333
-                            </p>
-                            <p>
-                                Telegram - 947 666 85 333
-                            </p>
-                        </div>
-                    </div>
+
+
+
+
                 </div>
             </div>
-            <div class="text-center text-muted mt-5">
+            <div class="text-center text-muted mt-5" style="padding: 20px">
                 Copyright &copy; 2017; Black Box Private Limited. All Rights Reserved
             </div>
         </footer>
